@@ -5,43 +5,27 @@ package ejercicio_herencia;
  * @author Alumno
  *
  */
-public class Estancia {
+import java.util.ArrayList;
+import java.util.Scanner;
 
-	String nombre;
-	double metroscuadrados;
-	int numpuertas;
-	int numventanas;
+abstract class Estancia {
+    protected String nombre;
+    protected double metrosCuadrados;
+    protected int numeroPuertas;
+    protected int numeroVentanas;
 
-	public String Getnombre() {
-		return nombre;
+    public Estancia(String nombre, double metrosCuadrados, int numeroPuertas, int numeroVentanas) {
+        this.nombre = nombre;
+        this.metrosCuadrados = metrosCuadrados;
+        this.numeroPuertas = numeroPuertas;
+        this.numeroVentanas = numeroVentanas;
+    }
 
-	}
+    public double getMetrosCuadrados() {
+        return metrosCuadrados;
+    }
 
-	public void Setnombre(String nombre) {
-		nombre = this.nombre;
-	}
+    public abstract void mostrarInfo();
+    
+    }
 
-	public double Getmetroscuadrados() {
-		return metroscuadrados;
-	}
-
-	public void Setmetroscuadrados(double metroscuadrados) {
-		metroscuadrados = this.metroscuadrados;
-	}
-
-	public int Getnumpuertas() {
-		return numpuertas;
-	}
-
-	public void Setnumpuertas(int numpuertas) {
-		numpuertas = this.numpuertas;
-	}
-
-	public int Getnumventanas() {
-		return numventanas;
-	}
-
-	public void Setnumventanas(int numventanas) {
-		numventanas = this.numventanas;
-	}
-}

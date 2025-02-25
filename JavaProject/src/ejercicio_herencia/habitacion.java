@@ -3,11 +3,14 @@
  */
 package ejercicio_herencia;
 
+import com.sun.java_cup.internal.runtime.Scanner;
+
 /**
  * @author Alumno
  * 
  */
 public class habitacion extends Estancia {
+	
 
 	int numpuertasarmario;
 	boolean accesobanio;
