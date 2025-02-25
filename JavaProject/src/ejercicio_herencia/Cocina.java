@@ -1,18 +1,22 @@
 package ejercicio_herencia;
 
-public class Cocina extends Estancia {
-	private boolean tendedero;
-	private int metrocuadradoTendedero;
+class Cocina extends Estancia {
+	private boolean tieneTendedero;
+	private double metrosTendedero;
 
-	public Cocina(boolean t, int m,  String n, int mc, int np, int nv) {
-		super(n, mc, np, nv);
-			tendedero=t;
-			metrocuadradoTendedero=m;
-		
+	public Cocina(double metrosCuadrados, int numeroPuertas, int numeroVentanas, boolean tieneTendedero,
+			double metrosTendedero) {
+		super("Cocina", metrosCuadrados, numeroPuertas, numeroVentanas);
+		this.tieneTendedero = tieneTendedero;
+		this.metrosTendedero = tieneTendedero ? metrosTendedero : 0;
 	}
-	public String mostrarInfo() {
-		String informacion= super.mostrarInfo()+"Tiene tendedero: "+this.tendedero
-				+" Metro Cuadrados del tendedero: "+metrocuadradoTendedero;
-		return informacion;
+
+	public double getMetrosCuadrados() {
+		return metrosCuadrados + metrosTendedero;
+	}
+
+	public void mostrarInfo() {
+		System.out.println("Cocina: " + metrosCuadrados + "m², " + numeroPuertas + " puertas, " + numeroVentanas
+				+ " ventanas, Tendedero: " + tieneTendedero + " (" + metrosTendedero + "m²)");
 	}
 }

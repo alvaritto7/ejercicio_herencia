@@ -1,4 +1,8 @@
 # ejercicio_herencia
 Trabajo grupal con Marcos, Julián y Álvaro
-# Descripcion
-Trabajo de pruebas herencias y git
+dev# Nombre del proyecto
+Primeros ejercicios con herencia 
+# Explicacion
+Este proyecto se ha llevado a cabo para provar como interactuamos entre los dispositivos
+
+
