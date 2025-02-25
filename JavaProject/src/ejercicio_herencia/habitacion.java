@@ -3,25 +3,31 @@
  */
 package ejercicio_herencia;
 
-
+import com.sun.java_cup.internal.runtime.Scanner;
 
 /**
  * @author Alumno
  * 
  */
-class Habitacion extends Estancia {
-    private int puertasArmario;
-    private boolean accesoBanio;
+public class habitacion extends Estancia {
+	
 
-    public Habitacion(double metrosCuadrados, int numeroPuertas, int numeroVentanas, int puertasArmario, boolean accesoBanio) {
-        super("Habitación", metrosCuadrados, numeroPuertas, numeroVentanas);
-        this.puertasArmario = puertasArmario;
-        this.accesoBanio = accesoBanio;
-    }
+	int numpuertasarmario;
+	boolean accesobanio;
 
-    
-    public void mostrarInfo() {
-        System.out.println("Habitación: " + metrosCuadrados + "m², " + numeroPuertas + " puertas, " + numeroVentanas + " ventanas, Armario: " + puertasArmario + " puertas, Acceso directo a baño: " + accesoBanio);
-    }
+	public int Getnumpuertasarmario() {
+		return numpuertasarmario;
+	}
+
+	public void Setnumpuertasarmario(int numpuertasarmario) {
+		numpuertasarmario = this.numpuertasarmario;
+	}
+
+	public boolean Getaccesobanio() {
+		return accesobanio;
+	}
+
+	public void Setaccesobanio(boolean accesobanio) {
+		accesobanio = this.accesobanio;
+	}
 }
-
