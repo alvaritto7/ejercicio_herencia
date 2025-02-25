@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package ejercicio_herencia;
 
 /**
@@ -8,43 +6,42 @@ package ejercicio_herencia;
  *
  */
 public class Estancia {
-	
+
 	String nombre;
 	double metroscuadrados;
 	int numpuertas;
 	int numventanas;
-	
-	
-	
-	
-public String Getnombre(){
-	return nombre;
 
-}
+	public String Getnombre() {
+		return nombre;
 
-public void Setnombre(String nombre){
-	nombre = this.nombre;
-}
+	}
 
-public double Getmetroscuadrados(){
-	return metroscuadrados;
-}
+	public void Setnombre(String nombre) {
+		nombre = this.nombre;
+	}
 
-public void Setmetroscuadrados(double metroscuadrados){
-	metroscuadrados = this.metroscuadrados;
-}
+	public double Getmetroscuadrados() {
+		return metroscuadrados;
+	}
 
-public int Getnumpuertas(){
-	return numpuertas;
-}
-public void Setnumpuertas(int numpuertas){
-	numpuertas= this.numpuertas;
-}
+	public void Setmetroscuadrados(double metroscuadrados) {
+		metroscuadrados = this.metroscuadrados;
+	}
 
-public int Getnumventanas(){
-	return numventanas;
-}
-public void Setnumventanas(int numventanas){
-	numventanas = this.numventanas;
-}
+	public int Getnumpuertas() {
+		return numpuertas;
+	}
+
+	public void Setnumpuertas(int numpuertas) {
+		numpuertas = this.numpuertas;
+	}
+
+	public int Getnumventanas() {
+		return numventanas;
+	}
+
+	public void Setnumventanas(int numventanas) {
+		numventanas = this.numventanas;
+	}
 }
