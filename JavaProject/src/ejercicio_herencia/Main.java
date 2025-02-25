@@ -29,8 +29,8 @@ public class Main {
         }
 
         System.out.print("Número de baños: ");
-        int numBaños = sc.nextInt();
-        for (int i = 0; i < numBaños; i++) {
+        int numBanios = sc.nextInt();
+        for (int i = 0; i < numBanios; i++) {
             casa.agregarEstancia(new Banio(6, 1, 1, "Ducha"));
         }
 
