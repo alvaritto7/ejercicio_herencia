@@ -11,17 +11,17 @@ package ejercicio_herencia;
  */
 class Habitacion extends Estancia {
     private int puertasArmario;
-    private boolean accesoBaño;
+    private boolean accesoBanio;
 
-    public Habitacion(double metrosCuadrados, int numeroPuertas, int numeroVentanas, int puertasArmario, boolean accesoBaño) {
+    public Habitacion(double metrosCuadrados, int numeroPuertas, int numeroVentanas, int puertasArmario, boolean accesoBanio) {
         super("Habitación", metrosCuadrados, numeroPuertas, numeroVentanas);
         this.puertasArmario = puertasArmario;
-        this.accesoBaño = accesoBaño;
+        this.accesoBanio = accesoBanio;
     }
 
     
     public void mostrarInfo() {
-        System.out.println("Habitación: " + metrosCuadrados + "m², " + numeroPuertas + " puertas, " + numeroVentanas + " ventanas, Armario: " + puertasArmario + " puertas, Acceso directo a baño: " + accesoBaño);
+        System.out.println("Habitación: " + metrosCuadrados + "m², " + numeroPuertas + " puertas, " + numeroVentanas + " ventanas, Armario: " + puertasArmario + " puertas, Acceso directo a baño: " + accesoBanio);
     }
 }
 
